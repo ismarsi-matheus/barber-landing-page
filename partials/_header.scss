@@ -24,13 +24,34 @@ i {
   }
 }
 
+@keyframes translateY {
+  from {
+    transform: translateY(0) scale(1);
+  }
 
-@keyframes translateY{
-    from{
-        transform:translateY(0) scale(1);
-    }
-
-    to{
-        transform: translateY(-8px) scale(1.1);
-    }
+  to {
+    transform: translateY(-8px) scale(1.1);
+  }
 }
+
+.header_button {
+  border: 1px solid $white_normal;
+  padding: 8px 24px;
+  border-radius: 4px;
+  color: $white_normal;
+  background-color: transparent;
+  transition: background-color 0.8s;
+}
+
+.header_button:hover {
+  border: 1px solid $red_light;
+  background-color: $red_light;
+}
+
+.header_logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 14px;
+}
+
