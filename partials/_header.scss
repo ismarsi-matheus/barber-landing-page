@@ -2,7 +2,7 @@ header {
   width: 100%;
 }
 
-.header_content_container {
+.header_content {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -55,3 +55,27 @@ i {
   margin-top: 14px;
 }
 
+@media screen and (max-width:768px){
+  .header_content {
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+
+    i{
+      margin-top: 18px;
+      font-size: 34px;
+    }
+  }
+
+
+
+  .header_logo img{
+    width: 160px;
+    margin-top: 46px;
+  }
+
+  .header_button{
+    display: none;
+  }
+}
