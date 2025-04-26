@@ -99,47 +99,131 @@
 // FIm Hero
 // about
 
-.about{
-    background-color: $primary_normal;
-    overflow: hidden;
-    color: $white_normal;
-
+.about {
+  background-color: $primary_normal;
+  overflow: hidden;
+  color: $white_normal;
 }
 
-.about_content{
-    align-items: center;
-    justify-content: center;
-    gap: 14px;
-    padding: 34px 14px 64px 14px;
+.about_content {
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  padding: 34px 14px 64px 14px;
 
-    display: flex;
-    img{
-        max-width: 570px;
-    }
+  display: flex;
+  img {
+    max-width: 570px;
+  }
 }
 
-.about_content div{
-    flex: 1;
+.about_content div {
+  flex: 1;
 }
 
-.about_description{
-    h2{
-        font-size: 38px;
-        margin-bottom: 24px;
-    }
+.about_description {
+  h2 {
+    font-size: 38px;
+    margin-bottom: 24px;
+  }
 
-    p{
-        margin-bottom: 14px;
-        font-size: 150%;
-    }
-
+  p {
+    margin-bottom: 14px;
+    font-size: 150%;
+  }
 }
 
 @media screen and (max-width: 768px) {
-    .about_content{
-        flex-direction: column;
-    }
-        
+  .about_content {
+    flex-direction: column;
+  }
 }
 
 // Fim about
+
+// Services
+
+.services {
+  background-color: $white_normal;
+  color: $black_normal;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 54px 14px;
+}
+
+.services_content h2 {
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 38px;
+  margin-bottom: 14px;
+}
+
+.services_content p {
+  text-align: center;
+  font-size: 150%;
+  margin-bottom: 14px;
+  max-width: 780px;
+}
+
+.haircuts {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  padding: 0 44px 34px 44px;
+}
+
+.haircut {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  background-color: $white_normal;
+  border-radius: 8px;
+  box-shadow: 0px -1px 17px -4px rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+
+  img {
+    width: 100%;
+    max-width: 354px;
+    transition: transform 0.2s;
+  }
+}
+
+
+.haircut img:hover{
+    transform: scale(1.2);
+    z-index: 1;
+}
+
+.haircut_info{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 14px;
+    background-color: $white_normal;
+    z-index: 99;
+}
+
+.haircut_info button{
+    color: $white_normal;
+    background-color: $red_normal;
+    padding: 4px 8px;
+    border-radius: 4px;
+    border: 0; 
+    cursor: default;
+
+}
+@media screen and (max-width: 768px) {
+  .haircuts {
+    flex-direction: column;
+  }
+  .haircut img{
+    max-width: 740px;
+  }
+    
+}
+
+// Fim Services
+// Footer
